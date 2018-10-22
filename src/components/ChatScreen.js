@@ -22,7 +22,7 @@ class ChatScreen extends Component {
     const chatManager = new ChatManager({
       instanceLocator: 'v1:us1:7195ecd4-8d2a-4681-80b3-e07c849a71cd',
       userId: currentUsername,
-      tokenProvider: new TokenProvider({ url: 'http://localhost:3001/auth' })
+      tokenProvider: new TokenProvider({ url: '/auth' })
     });
  
     chatManager

@@ -16,7 +16,7 @@ class App extends Component {
 
   onUsernameSubmit = username => {
 
-    axios.post('http://localhost:3001/users', {username})
+    axios.post('/users', {username})
     .then(res => {
       console.log(res.data);
       this.setState({ 
